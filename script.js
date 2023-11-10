@@ -7,7 +7,7 @@ function play(playerMove) {
     var randomIndex = Math.floor(Math.random() * 3);
     var computerMove = moves[randomIndex];
 
-    $(".computer-move").empty().append('<img src="' + computerMove + '.png" alt="' + computerMove + '">');
+        $(".computer-move").empty().append(`<img src="${computerMove}.png" alt="${computerMove}">`);
 
     var result = $('#result');
 
