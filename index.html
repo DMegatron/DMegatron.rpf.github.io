@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rock Paper Scissors Game</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="game-container">
+            <div class="player">
+                <h3>Your Move</h3>
+                <div class="options">
+                    <img src="stone.png" alt="Stone" class="move stone" onclick="play('stone')">
+                    <img src="paper.png" alt="Paper" class="move paper" onclick="play('paper')">
+                    <img src="scissor.png" alt="Scissor" class="move scissor" onclick="play('scissor')">
+                </div>
+            </div>
+            <div class="computer">
+                <h3>Computer's Move</h3>
+                <div class="computer-move" id="computerMove"></div>
+            </div>
+        </div>
+        <div class="result" id="result"></div>
+        <div class="score">
+            <h3>Score</h3>
+            <p>You: <span id="playerScore">0</span></p>
+            <p>Computer: <span id="computerScore">0</span></p>
+            <p>Draws: <span id="drawCount">0</span></p>
+        </div>
+        <button onclick="resetGame()" class="reset-button">Reset Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
